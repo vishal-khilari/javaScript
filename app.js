@@ -1,15 +1,10 @@
+const map1 = new Map();
+map1.set("a", 1);
+map1.set("b", 2);
+map1.set("c", 3);
 
-/////////////////////////////////////////
+console.log(map1.get("a"));
+console.log(map1.size);
+map1.delete("b");
 
-const numbers = [24, 54, 76, 24, 56];
-
-const BoolanGreater = numbers.every((number) => {
-  return number > 10; // ✅ must return
-});
-
-const BoolanSoem = numbers.some((number) => {
-  return number > 50; // ✅ must return
-});
-
-console.log(BoolanGreater); // true (all > 10)
-console.log(BoolanSoem); // true (at least one > 50)
+console.log(map1.size);
