@@ -1,0 +1,9 @@
+body {
+  background-color: rgba(121, 255, 255, 0.723);
+}
+
+.heading {
+  color: blue;
+  text-decoration: underline;
+  text-decoration-color: red;
+}

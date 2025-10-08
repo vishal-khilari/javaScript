@@ -1,2 +1,2 @@
-const p = document.querySelector("p");
-p.innerText = "Text changed";
+const h1 = document.querySelector("h1");
+h1.style.color = "green";
