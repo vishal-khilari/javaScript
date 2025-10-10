@@ -1,7 +1,4 @@
-const h1 = document.querySelector("h1");
+const unlist = document.querySelector("#unlist");
+const fourth = document.querySelector("#fourth");
 
-const h3 = document.createElement("h3");
-h3.innerText = "insert element";
-h3.style.color = "teal";
-document.body.appendChild(h3);
-h1.insertAdjacentElement("beforebegin", h3);
+unlist.removeChild(fourth);
