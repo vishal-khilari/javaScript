@@ -1,6 +1,10 @@
-const onevent = document.querySelector(".onevent");
 function print() {
   console.log("Hello World");
 }
+const form = document.querySelector("form");
+const input = document.querySelector("input");
 
-addEventListener("click", print);
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  console.log(input.value);
+});
