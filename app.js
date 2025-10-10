@@ -1,4 +1,6 @@
-const unlist = document.querySelector("#unlist");
-const fourth = document.querySelector("#fourth");
+const onevent = document.querySelector(".onevent");
+function print() {
+  console.log("Hello World");
+}
 
-unlist.removeChild(fourth);
+addEventListener("click", print);
