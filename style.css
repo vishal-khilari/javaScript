@@ -1,9 +1,35 @@
-body {
-  background-color: rgba(121, 255, 255, 0.723);
+.red {
+  color: red;
 }
 
-.heading {
+.blue {
   color: blue;
-  text-decoration: underline;
-  text-decoration-color: red;
+}
+
+.green {
+  color: green;
+}
+
+.orange {
+  color: orange;
+}
+
+.yellow {
+  color: yellow;
+}
+
+.pink {
+  color: pink;
+}
+
+.teal {
+  color: teal;
+}
+
+.brown {
+  color: brown;
+}
+
+.skyblue {
+  color: skyblue;
 }
