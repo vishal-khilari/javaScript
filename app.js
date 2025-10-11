@@ -1,10 +1,20 @@
-const input = document.querySelector("input");
+const emoji = document.querySelector(".emoji");
+const emojis = [
+  "🤡",
+  "😣",
+  "😩",
+  "😎",
+  "🌝",
+  "🌚",
+  "🤣",
+  "😊",
+  "😍",
+  "😃",
+  "😋",
+  "😆",
+];
 
-input.addEventListener("keypress", (e) =>
-  // <---use only one "console.log at a time"--->
-  // console.log(e.charCode)
-  // console.log(e.code)
-  // console.log(e.ctrlKey)
-  // console.log(e.key)
-  // console.log(e.shiftKey)
-);
+emoji.addEventListener("mouseover", () => {
+  emoji.innerHTML = emojis[Math.floor(Math.random() * emojis.length)];
+  console.log(emoji.innerHTML);
+});
