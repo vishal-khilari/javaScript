@@ -1,18 +1,49 @@
 body {
   display: flex;
-  height: 100vh;
-  width: 100vw;
   justify-content: center;
   align-items: center;
-  background-color: rgba(188, 188, 188, 0.641);
-}
-.emoji {
-  font-size: 200px;
-  filter: saturate(0.1);
-  transition: transform 0.1s ease, filter 0.1s ease;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(26, 0, 26)
 }
 
-.emoji:hover {
-  transform: scale(1.2);
-  filter: saturate(1);
+.btns {
+  height: 60px;
+  margin: 20px;
+  padding: 10px;
+  box-shadow: 2px 2px 5px rgb(0, 0, 0);
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  border: 2px solid white;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+.green {
+  background-color: green;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.yellow {
+  background-color: yellow;
+}
+.orange {
+  background-color: orange;
+}
+
+.teal {
+  background-color: teal;
+}
+
+.purple {
+  background-color: purple;
 }

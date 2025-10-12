@@ -1,20 +1,9 @@
-const emoji = document.querySelector(".emoji");
-const emojis = [
-  "🤡",
-  "😣",
-  "😩",
-  "😎",
-  "🌝",
-  "🌚",
-  "🤣",
-  "😊",
-  "😍",
-  "😃",
-  "😋",
-  "😆",
-];
+const body = document.body;
+const btns = document.querySelectorAll(".btns");
 
-emoji.addEventListener("mouseover", () => {
-  emoji.innerHTML = emojis[Math.floor(Math.random() * emojis.length)];
-  console.log(emoji.innerHTML);
+btns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const colour = btn.value;
+    body.style.backgroundColor = colour;
+  });
 });
