@@ -1,9 +1,16 @@
-const body = document.body;
-const btns = document.querySelectorAll(".btns");
+const emojies = document.querySelectorAll(".emojies");
+const container = document.querySelector(".container");
 
-btns.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    const colour = btn.value;
-    body.style.backgroundColor = colour;
+function deleteContent() {
+  container.innerHTML = "";
+}
+function feedback(value) {
+  console.log(value);
+}
+
+emojies.forEach((emoji) => {
+  emoji.addEventListener("click", () => {
+    deleteContent();
+    feedback(emoji.dataset.value);
   });
 });
